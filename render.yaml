@@ -18,17 +18,3 @@ services:
         value: 7c3b9a2e4d6f8a1c5e9b0d2f4a6c8e1
       - key: PYTHON_VERSION
         value: 3.11.0
-
-  # Frontend Service
-  - type: static
-    name: secure-portal-frontend
-    plan: free
-    rootDir: frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
-    envVars:
-      - key: VITE_API_URL
-        fromService:
-          type: web
-          name: secure-portal-backend
-          property: host
