@@ -1,0 +1,9 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+cryptography==41.0.5    # [Encryption, Signatures, Key Exchange]
+pyotp==2.9.0             # [NIST Multi-Factor Authentication]
+motor==3.3.1             # [MongoDB Asynchronous Driver]
+python-dotenv==1.0.0     # [Secure Environment Config]
+bcrypt==4.0.1            # [Hashing with Salt]
+python-multipart==0.0.6  # [File Upload Support]
+pydantic-settings        # [Configuration Management]
