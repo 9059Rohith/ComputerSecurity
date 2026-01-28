@@ -4,7 +4,7 @@ from db.mongodb_client import user_collection
 from core.security import encoding_ops
 
 router = APIRouter()
-
+router = APIRouter()
 class RegisterKeyRequest(BaseModel):
     username: str = Field(..., example="alice")
     public_key: str = Field(..., description="RSA public key in PEM format (Base64 encoded)")
